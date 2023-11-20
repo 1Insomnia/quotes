@@ -12,7 +12,7 @@ module.exports = {
       cyan: '#00BBCC',
       teal: '#00D7AB',
       green: '#92EC85',
-      yellow: '#F9F871',
+      yellow: '#f9c859',
       accents: {
         1: '#fafafa',
         2: '#eaeaea',

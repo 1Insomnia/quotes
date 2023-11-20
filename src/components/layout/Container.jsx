@@ -1,13 +1,14 @@
 import React from 'react'
 
-function Container({ children }) {
+function Container({ children, s }) {
   return (
-    <div className="">
-      <main className="pt-16 min-h-screen text-accents-9">
-        <div className="mx-auto max-w-screen-xl px-4">{children}</div>
-        <div className="min-h-screen"></div>
-      </main>
-    </div>
+    <main className="pt-16 min-h-screen">
+      <div
+        className={`mx-auto max-w-screen-xl px-4 flex flex-col gap-12 md:gap-20 lg:gap-32`}
+      >
+        {children}
+      </div>
+    </main>
   )
 }
 

@@ -51,16 +51,33 @@ const mainData = [
     image: '/assets/img/card-1.jpg',
     text: "Vis au soleil,\nNage dans la mer,\nEnivre-toi d'air pur",
     author: 'Ralph Valdo Emerson'
+  },
+  {
+    id: 2,
+    image: '/assets/img/card-2.jpg',
+    text: 'Explore. \nRêve. \nDécouvre',
+    author: 'Mark Twain'
+  },
+  {
+    id: 3,
+    image: '/assets/img/card-3.jpg',
+    text: "Ce n'est que lorsque \nle ciel est noir\n que nous pouvons voir \nles étoiles.",
+    author: 'Martin Luther Kinng JR.'
+  },
+  {
+    id: 4,
+    image: '/assets/img/card-4.jpg',
+    text: 'Quand tu\n perds, ne \nperds pas \nla leçon',
+    author: 'Dalai Lama'
   }
 ]
 
 function App() {
   return (
-    <div className="text-foreground bg-background">
+    <div className="text-accents-9 bg-background">
       <Navbar />
       <Container>
-        <Hero />
-        <StickerList data={stickersData} />
+        <Hero stickersData={stickersData} />
         <CardList data={mainData} />
       </Container>
     </div>
