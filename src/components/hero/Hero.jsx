@@ -3,9 +3,9 @@ import heroImg from './hero.jpg'
 
 function Header() {
   return (
-    <div className="py-6 lg:py-12">
+    <div className="py-10">
       <h1 className="font-bold tracking-tighter text-center inktrap-sm md:inktrap-md lg:inktrap-lg p-6 font-alt">
-        Sois toi même pour réussir
+        Just be yourself
       </h1>
       <p className="md:text-xl text-center py-6 px-8">
         Ce site à pour but de t’aider à avancer dans la vie, franchir les
