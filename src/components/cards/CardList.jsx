@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react"
 // Components
-import Card from './Card'
+import Card from "./Card"
 
 function CardList({ data }) {
   return (

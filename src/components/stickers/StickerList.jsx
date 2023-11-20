@@ -1,5 +1,5 @@
-import React from 'react'
-import Sticker from './Sticker'
+import React from "react"
+import Sticker from "./Sticker"
 
 function StickerList({ data }) {
   return (
