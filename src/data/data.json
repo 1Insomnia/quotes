@@ -1,0 +1,9 @@
+{
+  "data": [
+    {
+      "image": "/assets/img/...jpg",
+      "quote": "text",
+      "author": "string"
+    }
+  ]
+}

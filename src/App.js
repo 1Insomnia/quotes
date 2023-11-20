@@ -1,20 +1,18 @@
 // App
 // Components
-import Header from "./components/header/Header";
-import Navbar from "./components/navigation/Navbar";
+import Container from './components/layout/Container'
+import Hero from './components/hero/Hero'
+import Navbar from './components/navigation/Navbar'
 
 function App() {
   return (
-    <div className="">
+    <div className="text-foreground bg-background">
       <Navbar />
-      <main className="pt-16 min-h-screen">
-        <div className="container mx-auto px-5">
-          <Header />
-        </div>
-        <div className="min-h-screen"></div>
-      </main>
+      <Container>
+        <Hero />
+      </Container>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
