@@ -27,7 +27,7 @@
     {
       "id": 5,
       "image": "/assets/img/card-5.jpg",
-      "text": "A toi de décider ce que tu vénère",
+      "text": "A toi de décider ce que tu vénères",
       "author": "David Foster Wallace"
     },
     {
@@ -39,19 +39,19 @@
     {
       "id": 7,
       "image": "/assets/img/card-7.jpg",
-      "text": "Le Soleil brille pas Sur nous mais EN nous",
+      "text": "Le Soleil brille pas SUR nous mais EN nous",
       "author": "John Muir"
     },
     {
       "id": 8,
       "image": "/assets/img/card-8.jpg",
-      "text": "Un coeur éveiller est comme un ciel qui déverse de la lumière",
+      "text": "Un coeur éveillé est comme un ciel qui déverse de la lumière",
       "author": "Hafez"
     },
     {
       "id": 9,
       "image": "/assets/img/card-9.jpg",
-      "text": "On ne vois bien qu'avec le coeur. L'essentiel est invisible pour les yeux",
+      "text": "On ne voit bien qu'avec le coeur. L'essentiel est invisible pour les yeux",
       "author": "Antoine de Saint Exupéry"
     },
     {
@@ -87,7 +87,7 @@
     {
       "id": 15,
       "image": "/assets/img/card-15.jpg",
-      "text": "Que tes choix reflète tes espoirs et non tes peurs",
+      "text": "Que tes choix reflètes tes espoirs et non tes peurs",
       "author": "Nelson Mandela"
     },
     {

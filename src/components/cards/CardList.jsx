@@ -8,10 +8,10 @@ function CardList({ data }) {
       {data.map(item => (
         <Card
           key={item.id}
+          id={item.id}
           text={item.text}
           author={item.author}
           image={item.image}
-          id={item.id}
         />
       ))}
     </div>
