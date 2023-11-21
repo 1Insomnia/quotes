@@ -1,12 +1,9 @@
 import React from "react"
 import useSWR from "swr"
 // Components
-import Container from "../components/layout/Container"
 import Hero from "../components/hero/Hero"
-import Navbar from "../components/navigation/Navbar"
 import CardList from "../components/cards/CardList"
-
-const fetcher = url => fetch(url).then(res => res.json())
+import { fetcher } from "../utils/helpers"
 
 function Home() {
   const { data, error, isLoading } = useSWR("/data/data.json", fetcher)

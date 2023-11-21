@@ -23,4 +23,9 @@
   .inktrap-lg {
     font-size: 72px;
   }
+
+  .bio {
+    text-align: justify;
+    text-align-last: left;
+  }
 }

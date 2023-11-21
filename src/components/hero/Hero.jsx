@@ -3,7 +3,7 @@ import heroImg from "./hero.jpg"
 
 function Hero() {
   return (
-    <div className="pt-10">
+    <div>
       <h1 className="font-bold tracking-tighter text-center inktrap-sm md:inktrap-md lg:inktrap-lg font-alt text-accents-6">
         Just be yourself
       </h1>
