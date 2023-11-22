@@ -21,7 +21,7 @@ function Card({ id, content, author, img_path }) {
           />
         </div>
         <div className="w-full rounded-lg font-alt md:w-1/2">
-          <p className="font-alt text-3xl text-center mb-2 lg:text-6xl text-accents-6">
+          <p className="font-alt text-3xl text-center mb-2 lg:text-6xl text-accents-6 whitespace-pre-wrap">
             {content}
           </p>
           <p className="font-sans uppercase text-center text-sm text-accents-7">
