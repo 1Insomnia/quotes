@@ -3,7 +3,6 @@ import supabaseClient from "../lib/supabaseClient"
 // Components
 import Hero from "../components/hero/Hero"
 import CardList from "../components/cards/CardList"
-import { fetcher } from "../utils/helpers"
 
 function Home() {
   const [quotes, setQuotes] = React.useState([])
@@ -13,12 +12,17 @@ function Home() {
   React.useEffect(() => {
     const getQuotes = async () => {
       setIsLoading(true)
-      const { data, error } = await supabaseClient.from("quote").select(`
+      const { data, error } = await supabaseClient
+        .from("quote")
+        .select(
+          `
             id,
             content,
             img_path,
             author ( name)
-        `)
+        `
+        )
+        .order("id", { ascending: true })
 
       if (error) {
         setFetchError("Could not fetch the quotes")
@@ -32,8 +36,6 @@ function Home() {
     }
     getQuotes()
   }, [])
-
-  console.log(quotes)
 
   return (
     <div>

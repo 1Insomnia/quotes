@@ -1,6 +1,6 @@
 import React from "react"
 
-function Container({ children, s }) {
+function Container({ children }) {
   return (
     <main className="pt-28 min-h-screen">
       <div
