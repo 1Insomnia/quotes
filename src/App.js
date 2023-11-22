@@ -2,6 +2,7 @@
 import { Routes, Route } from "react-router-dom"
 // Components
 import Navbar from "./components/navigation/Navbar"
+import Footer from "./components/navigation/Footer"
 import Container from "./components/layout/Container"
 // Pages
 import Home from "./pages/Home"
@@ -17,6 +18,7 @@ function App() {
           <Route path="/citation/:id" element={<Citation />} />
         </Routes>
       </Container>
+      <Footer />
     </div>
   )
 }

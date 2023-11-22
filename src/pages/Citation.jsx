@@ -19,14 +19,14 @@ function Citation() {
   return (
     <div className="">
       <div>
-        <h1 className="font-bold tracking-tighter text-center text-2xl font-alt text-accents-6 md:text-4xl">
+        <h1 className="font-bold tracking-tighter text-center font-alt text-accents-6 text-xl md:text-3xl lg:text-4xl">
           {citation.text}
         </h1>
         <p className="text-xxs uppercase mt-1 text-center">
           "{citation.author}"
         </p>
       </div>
-      <div className="flex items-center mt-4 md:mx-auto md:mt-12">
+      <div className="flex items-center mt-5 md:mx-auto md:mt-10 lg:mt-20">
         <div className="md:w-1/3 mr-3 md:mr-0">
           <img
             src={citation.author_img}
