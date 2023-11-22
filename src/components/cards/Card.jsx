@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-function Card({ id, text, author, image }) {
+function Card({ id, content, author, img_path }) {
   function alternate(number) {
     return number % 2 !== 0
   }
@@ -14,11 +14,15 @@ function Card({ id, text, author, image }) {
         } `}
       >
         <div className="md:w-1/2 text-center">
-          <img src={image} alt={image} className="w-full h-auto rounded-lg" />
+          <img
+            src={img_path}
+            alt={author}
+            className="w-full h-auto rounded-lg"
+          />
         </div>
         <div className="w-full rounded-lg font-alt md:w-1/2">
           <p className="font-alt text-3xl text-center mb-2 lg:text-6xl text-accents-6">
-            {text}
+            {content}
           </p>
           <p className="font-sans uppercase text-center text-sm text-accents-7">
             "{author}"

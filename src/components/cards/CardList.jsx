@@ -9,9 +9,9 @@ function CardList({ data }) {
         <Card
           key={item.id}
           id={item.id}
-          text={item.text}
-          author={item.author}
-          image={item.image}
+          content={item.content}
+          author={item.author.name}
+          img_path={item.img_path}
         />
       ))}
     </div>
