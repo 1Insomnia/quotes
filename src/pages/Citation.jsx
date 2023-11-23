@@ -59,16 +59,16 @@ function Citation() {
             </p>
           </div>
           <div className="flex items-center mt-5 md:mx-auto md:mt-10 lg:mt-20">
-            <div className="md:w-1/3 mr-3 md:mr-0">
+            <div className="w-1/3 mr-3 md:mr-0">
               <img
                 src={quote.author.img_path}
-                className="h-16 w-16 md:h-48 md:w-48 rounded-lg object-cover block"
+                className="w-24 md:h-48 md:w-48 rounded-lg object-cover block"
                 alt={quote.author}
                 width={64}
                 height={64}
               />
             </div>
-            <p className="text-xs pt-2 text-accents-7 bio md:w-3/5 md:text-xl">
+            <p className="w-2/3 text-xs pt-2 text-accents-7 bio md:text-xl">
               {quote.author.bio}
             </p>
           </div>
