@@ -8,6 +8,8 @@ function Citation() {
   const [quote, setQuote] = React.useState({
     name: "",
     content: "",
+    exercise_img: "",
+    exercise_text: "",
     author: {
       name: "",
       img_path: ""
@@ -26,6 +28,8 @@ function Citation() {
           `
             id,
             content,
+            exercise_img,
+            exercise_text,
             author ( name, img_path, bio)
         `
         )
@@ -44,37 +48,54 @@ function Citation() {
     getQuote()
   }, [id])
 
+  console.log(quote.exercise_img)
+  console.log(quote.exercise_text)
+
   return (
-    <div className="">
+    <>
       {fetchError && <div>{fetchError}</div>}
       {isLoading && <div>Loading content</div>}
       {!fetchError && !isLoading && (
-        <div>
+        <>
+          {/*  */}
           <div>
-            <h1 className="font-bold tracking-tighter text-center font-alt text-accents-6 text-xl md:text-3xl lg:text-4xl">
-              {quote.content}
-            </h1>
-            <p className="text-xxs uppercase mt-1 text-center">
-              "{quote.author.name}"
-            </p>
-          </div>
-          <div className="flex items-center mt-5 md:mx-auto md:mt-10 lg:mt-20">
-            <div className="w-1/3 mr-3 md:mr-0">
-              <img
-                src={quote.author.img_path}
-                className="w-24 md:h-48 md:w-48 rounded-lg object-cover block"
-                alt={quote.author}
-                width={64}
-                height={64}
-              />
+            <div>
+              <h1 className="font-bold tracking-tighter text-center font-alt text-accents-6 text-xl md:text-3xl lg:text-4xl">
+                {quote.content}
+              </h1>
+              <p className="text-xxs uppercase mt-1 text-center">
+                "{quote.author.name}"
+              </p>
             </div>
-            <p className="w-2/3 text-xs pt-2 text-accents-7 bio md:text-xl">
-              {quote.author.bio}
-            </p>
+            <div className="flex items-center mt-5 md:mx-auto md:mt-10 lg:mt-20">
+              <div className="w-1/3 mr-3 md:mr-0">
+                <img
+                  src={quote.author.img_path}
+                  className="w-24 md:h-48 md:w-48 rounded-lg object-cover block"
+                  alt={quote.author}
+                  width={64}
+                  height={64}
+                />
+              </div>
+              <p className="w-2/3 text-xs pt-2 text-accents-7 bio md:text-xl">
+                {quote.author.bio}
+              </p>
+            </div>
           </div>
-        </div>
+          {/* Exercice section */}
+          <div>
+            {quote.exercise_text && !quote.exercise_img && (
+              <div className="whitespace-pre-wrap text-center">
+                {quote.exercise_text}
+              </div>
+            )}
+            {!quote.exercise_text && quote.exercise_img && (
+              <img src={quote.exercise_img} alt="azeaz" />
+            )}
+          </div>
+        </>
       )}
-    </div>
+    </>
   )
 }
 
