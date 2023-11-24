@@ -1,6 +1,8 @@
 import React from "react"
 import { useParams } from "react-router-dom"
 import supabaseClient from "../lib/supabaseClient"
+// Components
+import Exercise from "../components/exercice/Exercise"
 
 function Citation() {
   let { id } = useParams()
@@ -48,9 +50,6 @@ function Citation() {
     getQuote()
   }, [id])
 
-  console.log(quote.exercise_img)
-  console.log(quote.exercise_text)
-
   return (
     <>
       {fetchError && <div>{fetchError}</div>}
@@ -83,16 +82,10 @@ function Citation() {
             </div>
           </div>
           {/* Exercice section */}
-          <div>
-            {quote.exercise_text && !quote.exercise_img && (
-              <div className="whitespace-pre-wrap text-center">
-                {quote.exercise_text}
-              </div>
-            )}
-            {!quote.exercise_text && quote.exercise_img && (
-              <img src={quote.exercise_img} alt="azeaz" />
-            )}
-          </div>
+          <Exercise
+            exercise_img={quote.exercise_img}
+            exercise_text={quote.exercise_text}
+          />
         </>
       )}
     </>
