@@ -15,7 +15,6 @@ function Navbar() {
             className="h-12 w-12"
           />
         </Link>
-        <div>Menu</div>
       </div>
     </div>
   )

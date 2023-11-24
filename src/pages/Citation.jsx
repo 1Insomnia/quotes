@@ -62,7 +62,7 @@ function Citation() {
               <h1 className="font-bold tracking-tighter text-center font-alt text-accents-6 text-xl md:text-3xl lg:text-4xl">
                 {quote.content}
               </h1>
-              <p className="text-xxs uppercase mt-1 text-center">
+              <p className="text-xxs md:text-base uppercase mt-1 text-center">
                 "{quote.author.name}"
               </p>
             </div>

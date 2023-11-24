@@ -9,7 +9,9 @@ function Hero() {
       </h1>
       <p className="md:text-xl text-center py-6 px-8">
         Ce site à pour but de t’aider à avancer dans la vie, franchir les
-        obstacles, te surpasser, pour réussir et vivre heureux.
+        obstacles, te surpasser, pour réussir et vivre heureux. Apprends à
+        dépouiller ton être afin de découvrir qui tu es vraiment, ce qui est le
+        plus important pour toi et ce que tu veux cultiver dans ta vie.
         <br />
         Sois loyal envers-toi même, fais-toi confiance.
         <br />
@@ -23,7 +25,11 @@ function Hero() {
         className="mt-5 lg:mt-10 w-3/4 block rounded-lg mx-auto"
       />
       <p className="text-center py-4">
-        Chaque citation proposée te permettra de construire ta feuille de route
+        Les questions les plus difficiles sont celles qui ouvrent des portes !
+        <br />
+        Chaque citation ci-dessous te propose une leçon de vie universelle
+        associée à un exercise. <br />
+        Tu pourra ainsi construire ta feuille de route.
       </p>
     </div>
   )
